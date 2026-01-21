@@ -1,0 +1,46 @@
+/* Custom Scrolling Marquee */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+/* Glassmorphism Design */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+/* Scroll reveal initial state */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Scroll reveal active state */
+.reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Modern Typography */
+h1, h2, h3 {
+    letter-spacing: -0.02em;
+}
+
+/* Universal Transitions */
+* {
+    transition: all 0.3s ease;
+}.faq-answer {
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faq-item {
+    transition: all 0.3s ease;
+}
